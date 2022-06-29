@@ -1,0 +1,532 @@
+/* General Styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #000;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #000;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+span {
+  color: #fdb83a;
+}
+/* Header */
+.header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.menu a {
+  color: #ebebeb;
+  cursor: pointer;
+}
+.menu a:hover{
+  color: #cc6201;
+  border-bottom: 2px solid #cc6201;
+}
+header h1 {
+  color: #cc6201;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.btn-mobile {
+  display: none;
+}
+/* Introduction Section */
+.background {
+  background-color: #000;
+}
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: center;
+}
+.introduction h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  max-width: 14.5ch;
+  line-height: 65px;
+  padding-bottom: 40px;
+}
+.introduction p {
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  max-width: 38ch;
+  padding-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+}
+.introduction img {
+  border-radius: 4px;
+}
+.btn {
+  color: #290c00;
+  background: linear-gradient(#febc3d, #eb8b16);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: max-content;
+}
+/* Choose Car Section */
+.choose {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.grid-cars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.car-item h3 {
+  color: #141414;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.car-item p {
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", serif;
+  color: #292929;
+}
+.car-item img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+/* Technology Section */
+.technology {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #000;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px;
+  align-items: center;
+}
+.technology-infos h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  max-width: 17ch;
+  line-height: 65px;
+  padding: 40px 0;
+}
+.advanced {
+  font-weight: bold;
+}
+.technology-description {
+  max-width: 41ch;
+  padding-bottom: 40px;
+}
+.technology-description,
+.advanced {
+  color: #a3a3a3;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+}
+.grid-benefits {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+.grid-benefits h4 {
+  font-size: 1.2rem;
+  color: #ebebeb;
+  font-weight: normal;
+}
+.grid-benefits p {
+  color: #a3a3a3;
+  font-family: "Roboto Slab", serif;
+  grid-column: 1 / -1;
+  max-width: 32ch;
+}
+.tech-car {
+  border-radius: 4px;
+}
+/* Insurance Section */
+.gray-background {
+  background-color: #141414;
+}
+.insurance {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 0;
+}
+.grid-insurance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+}
+.insurance-item {
+  background-color: #000;
+  margin-bottom: 100px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.insurance-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+}
+.insurance-item ul {
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+}
+.insurance-item a {
+  grid-column: 1 / -1;
+}
+.silver-insurance {
+  color: #7a7a7a;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.gold-insurance {
+  color: #ff9f29;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.insurance-item li {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.insurance-item li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 11px;
+  background-image: url("./assets/certo.svg");
+}
+.insurance-item li + li {
+  margin-top: 20px;
+}
+.secondary-btn {
+  background-color: #3d3d3d;
+  color: #b8b8b8;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  max-width: max-content;
+}
+.price {
+  color: #fff;
+  font-size: 3rem;
+}
+.monthly {
+  color: #545454;
+  font-size: 1rem;
+}
+/* Footer */
+.grid-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 40px;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.grid-footer h1 {
+  color: #cc6201;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.grid-footer h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.grid-footer li {
+  font-family: "Roboto", sans-serif;
+  color: #a3a3a3;
+}
+.grid-footer li + li {
+  margin-top: 5px;
+}
+/* Responsiveness */
+@media (max-width: 1450px) {
+  .header {
+    justify-content: space-between;
+  }
+  .grid-cars,
+  .technology,
+  .grid-insurance,
+  .introduction {
+    max-width: 1100px;
+  }
+  .grid-benefits p {
+    max-width: 25ch;
+  }
+}
+@media (max-width: 1200px) {
+  .introduction h1,
+  .choose,
+  .technology-infos h2,
+  .insurance {
+    font-size: 3rem;
+  }
+  .introduction p,
+  .technology-description,
+  .advancedm,
+  .btn,
+  .secondary-btn {
+    font-size: 1.3rem;
+  }
+  img {
+    max-width: 100%;
+  }
+  .car-item h3 {
+    font-size: 1.8rem;
+  }
+  .car-item p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1100px) {
+  .grid-cars,
+  .technology,
+  .grid-insurance,
+  .introduction {
+    max-width: 900px;
+  }
+  .grid-benefits p {
+    max-width: 25ch;
+  }
+  .technology-infos {
+    padding-right: 20px;
+  }
+  .technology-description {
+    max-width: 22ch;
+  }
+  .grid-benefits p {
+    max-width: 15ch;
+  }
+}
+@media (max-width: 950px) {
+  .grid-cars,
+  .technology,
+  .grid-insurance,
+  .introduction {
+    max-width: 700px;
+  }
+  .gold-insurance {
+    font-size: 2.5rem;
+  }
+  .silver-insurance,
+  .price {
+    font-size: 1.5rem;
+  }
+  .introduction h1,
+  .choose,
+  .technology-infos h2,
+  .insurance,
+  header h1 {
+    font-size: 2rem;
+  }
+  .car-item h3 {
+    font-size: 1.2rem;
+  }
+  .menu,
+  .car-item p,
+  .introduction p,
+  .technology-description,
+  .advanced,
+  .grid-benefits h4,
+  .insurance-item li {
+    font-size: 1rem;
+  }
+  .btn,
+  .secondary-btn,
+  .grid-benefits p,
+  .monthly {
+    font-size: 0.8rem;
+  }
+  .introduction h1,
+  .technology-infos h2 {
+    line-height: 35px;
+  }
+  .grid-cars {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-insurance {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .grid-insurance div + div {
+    margin-top: -110px;
+  }
+}
+@media (max-width: 750px) {
+  .btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    gap: 0.5rem;
+  }
+  .btn-mobile:hover {
+    border: 1px solid #cc6201;
+  }
+  .mobile {
+    width: 20px;
+    border-top: 2px solid #cc6201;
+  }
+  .mobile::after,
+  .mobile::before {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 20px;
+    height: 2px;
+    background-color: #cc6201;
+    transition: 0.3s;
+    position: relative;
+  }
+  .navigation.active .mobile {
+    border-top-color: transparent;
+  }
+  .navigation.active .mobile::before {
+    transform: rotate(135deg);
+  }
+  .navigation.active .mobile::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0;
+    background-color: #000;
+    z-index: 1;
+    transition: 0.6s;
+    visibility: hidden;
+    height: 0;
+    overflow-y: hidden;
+  }
+  .navigation.active .menu {
+    height: 18vh;
+    visibility: visible;
+  }
+  .menu li {
+    padding: 15px 40px;
+    text-align: right;
+  }
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+  .introduction h1,
+  .introduction p {
+    padding-bottom: 20px;
+  }
+  .choose {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .informations {
+    padding-top: 20px;
+    grid-row: 2;
+  }
+  .technology {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .tech-car {
+    display: none;
+  }
+  .grid-cars {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .introduction img {
+    max-width: 480px;
+  }
+}
+@media (max-width: 500px) {
+  .introduction img {
+    max-width: 350px;
+  }
+  .grid-footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .introduction img {
+    max-width: 250px;
+  }
+}
